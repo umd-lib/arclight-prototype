@@ -39,11 +39,21 @@ rails s
 
 ## Running in Docker
 
-Clone the repo and build the Docker image:
+Clone the repo
 
 ```
 git clone git@github.com:peichman-umd/arclight-prototype.git
 cd arclight-prototype
+
+```
+Download the solr zip to `dist` directory with name `solr.zip`
+```
+curl -o dist/solr.zip http://lib-solr-mirror.princeton.edu/dist/lucene/solr/7.5.0/solr-7.5.0.zip
+```
+
+Build the Docker image:
+
+```
 docker build . -t arclight
 ```
 
