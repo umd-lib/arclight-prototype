@@ -16,7 +16,7 @@ believed to work:
 Clone the repo and start up the Vagrant box:
 
 ```
-git clone git@github.com:peichman-umd/arclight-prototype.git
+git clone git@github.com:brialparker/arclight-prototype.git
 cd arclight-prototype
 vagrant up
 ```
@@ -146,7 +146,7 @@ mkdir eads
 3) In a separate terminal, copy EAD files into a running Docker container, use:
 
 ```
-docker cp <EAD FILE> arclight:~/eads
+docker cp <EAD FILE> arclight:/home/arclight/eads
 ```
 
 This will copy the file from the host to the ~/eads.
