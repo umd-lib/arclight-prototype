@@ -1,8 +1,0 @@
-# Place any default configuration for solr_wrapper here
-# port: 8983
-version: 7.5.0
-mirror_url: http://lib-solr-mirror.princeton.edu/dist/
-solr_zip_path: /home/arclight/dist/solr.zip
-collection:
-  dir: solr/conf/
-  name: blacklight-core
