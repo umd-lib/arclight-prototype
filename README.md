@@ -16,7 +16,7 @@ believed to work:
 Clone the repo and start up the Vagrant box:
 
 ```
-git clone git@github.com:brialparker/arclight-prototype.git
+git clone git@github.com:umd-lib/arclight-prototype.git
 cd arclight-prototype
 vagrant up
 ```
@@ -42,7 +42,7 @@ rails s
 Clone the repo
 
 ```
-git clone git@github.com:peichman-umd/arclight-prototype.git
+git clone git@github.com:umd-lib/arclight-prototype.git
 cd arclight-prototype
 
 ```
