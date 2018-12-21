@@ -11,8 +11,10 @@ USER arclight
 
 WORKDIR /home/arclight
 
-COPY --chown=arclight:arclight . .
+COPY --chown=arclight:arclight Gemfile* ./
 RUN bundle install
+
+COPY --chown=arclight:arclight . .
 RUN rails db:migrate
 
-CMD solr_wrapper & rails s
+CMD rails solr:start & rm -rf /home/arclight/tmp/pids/* & rails s

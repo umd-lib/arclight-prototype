@@ -1,5 +1,6 @@
 db/*.sqlite3
 db/*.sqlite3-journal
+dist/solr.zip
 Dockerfile
 README.md
 .vagrant

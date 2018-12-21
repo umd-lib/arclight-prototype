@@ -16,7 +16,7 @@ believed to work:
 Clone the repo and start up the Vagrant box:
 
 ```
-git clone git@github.com:brialparker/arclight-prototype.git
+git clone git@github.com:umd-lib/arclight-prototype.git
 cd arclight-prototype
 vagrant up
 ```
@@ -39,11 +39,26 @@ rails s
 
 ## Running in Docker
 
-Clone the repo and build the Docker image:
+Clone the repo
 
 ```
-git clone git@github.com:peichman-umd/arclight-prototype.git
+git clone git@github.com:umd-lib/arclight-prototype.git
 cd arclight-prototype
+
+```
+Setup Solr
+```
+# Download the solr zip to `dist` directory with name `solr.zip`
+curl -o dist/solr.zip http://lib-solr-mirror.princeton.edu/dist/lucene/solr/7.5.0/solr-7.5.0.zip
+
+# Setup
+bundle install
+solr_wrapper -v --config .solr_wrapper.yml --solr_zip_path dist/solr.zip  --instance_directory solr/instance --persist
+```
+
+Build the Docker image:
+
+```
 docker build . -t arclight
 ```
 
