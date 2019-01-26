@@ -171,3 +171,7 @@ the "umd" repository, command would be:
 ```
 FILE=./eads/0037.LIT_20181213_170001_UTC__ead.xml REPOSITORY_ID=umd bundle exec rake arclight:index
 ```
+
+## License
+
+See the [LICENSE](LICENSE.md) file for license rights and limitations (Apache 2.0).
